@@ -1,0 +1,29 @@
+{
+  "lint": {
+    "rules": [
+      "polymer-2"
+    ]
+  },
+  "fragments": [
+    "src/my-app-app/lazy-component.html"
+  ],
+  "builds": [
+    {
+      "bundle": {
+        "rewriteUrlsInTemplates": true,
+        "sourcemaps": true
+      },
+      "js": {
+        "minify": true,
+        "compile": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      }
+    }
+  ],
+  "root": "my-app"
+}

@@ -1,0 +1,24 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<!--Wrapper component for the ing-orange-move-money-dialog. Handles app-specific logic.-->
+<dom-module id="lazy-component">
+  <link rel="lazy-import" group="insurance-travel-short-term-dialog"
+    href="./lazy-component.1.html">
+
+  <template>
+      lazy-component
+      <lazy-component-1></lazy-component-1>
+  </template>
+
+  <script>
+    class LazyComponent extends Polymer.Element {
+      static get is() {
+        return 'lazy-component';
+      }
+    }
+
+    customElements.define(
+      LazyComponent.is,
+      LazyComponent);
+  </script>
+</dom-module>
