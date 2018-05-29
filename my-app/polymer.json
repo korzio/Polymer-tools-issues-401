@@ -4,15 +4,9 @@
       "polymer-2"
     ]
   },
-  "fragments": [
-    "src/my-app-app/lazy-component.html"
-  ],
   "builds": [
     {
-      "bundle": {
-        "rewriteUrlsInTemplates": true,
-        "sourcemaps": true
-      },
+      "bundle": {},
       "js": {
         "minify": true,
         "compile": true

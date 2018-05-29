@@ -1,22 +1,16 @@
 {
   "entrypoint": "index.html",
-  "fragments": [
-    "src/my-app-app/lazy-component.html"
-  ],
+  "fragments": [],
   "sources": [
     "src/**/*",
-    "index.html",
-    "src/my-app-app/lazy-component.html"
+    "index.html"
   ],
   "extraDependencies": [
     "bower_components/webcomponentsjs/*.js"
   ],
   "builds": [
     {
-      "bundle": {
-        "rewriteUrlsInTemplates": true,
-        "sourcemaps": true
-      },
+      "bundle": {},
       "js": {
         "minify": true,
         "compile": true
