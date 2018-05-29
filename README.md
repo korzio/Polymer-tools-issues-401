@@ -31,3 +31,12 @@ Error: stream.push() after EOF
     at /Polymer-tools-issues-401/node_modules/polymer-cli/node_modules/polymer-build/lib/analyzer.js:20:71
     at new Promise (<anonymous>)
 ```
+
+Try to remove
+
+```html
+<link rel="lazy-import" group="insurance-travel-short-term-dialog"
+    href="./lazy-component.html">
+```
+
+from `my-app-app.html` and then the build is passing normally
